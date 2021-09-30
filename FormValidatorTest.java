@@ -65,7 +65,7 @@ class FormValidatorTest {
     @Test
     void emailValidatorDomainTest() {
         assertAll(() -> assertFalse(FormValidator.checkEmail("email@mail")),
-                () -> assertTrue(FormValidator.checkEmail("email@mail#archive.com")),
+                () -> assertTrue(FormValidator.checkEmail("email@mail-archive.com")),
                 () -> assertFalse(FormValidator.checkEmail("email@mail..com")));
     }
     @Test
